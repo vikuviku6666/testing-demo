@@ -8,10 +8,18 @@ describe('FizzBuzz', () => {
 		// 		exercise1.fizzBuzz(a);
 		// 	}).toThrow();
 		// });
-		expect(() => {exercise1.fizzBuzz('a')}).toThrow();
-		expect(() => {exercise1.fizzBuzz(null)}).toThrow();
-		expect(() => {exercise1.fizzBuzz(undefined)}).toThrow();
-		expect(() => {exercise1.fizzBuzz({})}).toThrow();
+		expect(() => {
+			exercise1.fizzBuzz('a');
+		}).toThrow();
+		expect(() => {
+			exercise1.fizzBuzz(null);
+		}).toThrow();
+		expect(() => {
+			exercise1.fizzBuzz(undefined);
+		}).toThrow();
+		expect(() => {
+			exercise1.fizzBuzz({});
+		}).toThrow();
 	});
 	it('should return FizzBuzz if input is divisible by 3 and 5', () => {
 		const result = exercise1.fizzBuzz(15);
